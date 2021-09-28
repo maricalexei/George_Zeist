@@ -35,7 +35,7 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid fixed-bottom">
+    <section class="container-fluid">
         <div class="row">
             <div class="col-12 px-0">
                 <?php include("./footer.php"); ?>
