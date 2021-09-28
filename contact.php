@@ -1,6 +1,6 @@
 <div class="row px-0">
     <div class="col-4">
-        <div class="card">
+        <div class="">
             <div class="card-body">
                 <h5 class="card-title">Contact</h5>
                 <p class="card-text">
@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="col-4">
-        <div class="card">
+        <div class="">
             <div class="card-body">
                 <h5 class="card-title">Contact</h5>
                 <p class="card-text">
@@ -31,8 +31,6 @@
                     zondag: 11:00–01:00<br>
                     maandag: 11:00–01:00<br>
                 </p>
-
-                <p class="card-text"><small class="text-muted"></small></p>
             </div>
         </div>
     </div>
@@ -41,7 +39,7 @@
             <div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=Slotlaan%20280%2C%203701%20GW%20Zeist&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                    href="https://vincheckeurope.eu">VIN Check</a><br>
+                    href="https://vincheckeurope.eu"></a><br>
                 <style>
                     .mapouter {
                         position: relative;
@@ -49,7 +47,7 @@
                         height: 400px;
                         width: 400px;
                     }
-                </style><a href="https://embedmaps.info">Embed Google Maps</a>
+                </style><a </a>
                 <style>
                     .gmap_canvas {
                         overflow: hidden;
