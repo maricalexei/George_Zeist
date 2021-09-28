@@ -1,0 +1,15 @@
+.nav_border{
+    border-bottom: 1px solid black;
+
+}
+
+.footer_bar{
+    border-top: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.nav_padding{
+    padding-right: 36px;
+    padding-left: 36px;
+    border-right: 1px solid black;
+}
