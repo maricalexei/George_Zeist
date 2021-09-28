@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>About Us Section</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>	
-<body>
 	<div class="section">
 		<div class="container">
 			<div class="content-section">
@@ -30,7 +20,3 @@
 			</div>
 		</div>
 	</div>
-
-	
-</body>
-</html>
