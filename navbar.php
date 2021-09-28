@@ -4,7 +4,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
 
 <div class="container" style="font-family: 'Times New Roman',sans-serif;">
     <nav class="navbar navbar-expand-lg navbar-light" style=" border-bottom: black">
-        <a class="navbar-brand" style="padding-left: 10px" href="#">
+        <a class="navbar-brand" style="padding-left: 10px" href="./index.php?content=home">
             <h1>
                 <b style="font-size: 36px; padding-right: 300px">GEORGE</b>
             </h1>
@@ -20,7 +20,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
                     <a class="nav-link" href="#">LOCATIONS</a>
                 </li>
                 <li class="nav-item nav_padding">
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link" href="./index.php?content=contact">CONTACT</a>
                 </li>
                 <li class="nav-item nav_padding">
                     <a class="nav-link" href="#">CAREER</a>
@@ -29,7 +29,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
                     <a class="nav-link" href="#">RESERVATION</a>
                 </li>
                 <li class="nav-item nav_padding">
-                    <a class="nav-link" href="contact.php">CONTACT</a>
+                    <a class="nav-link" href="">ABOUT US</a>
                 </li>
             </ul>
         </div>
