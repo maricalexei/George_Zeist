@@ -1,3 +1,7 @@
+<?php
+$active = (isset($_GET["content"])) ? $_GET["content"] : "";
+?>
+
 <div class="container" style="font-family: 'Times New Roman',sans-serif;">
     <nav class="navbar navbar-expand-lg navbar-light" style=" border-bottom: black">
         <a class="navbar-brand" style="padding-left: 10px" href="#">
@@ -23,6 +27,9 @@
                 </li>
                 <li class="nav-item nav_padding">
                     <a class="nav-link" href="#">RESERVATION</a>
+                </li>
+                <li class="nav-item nav_padding">
+                    <a class="nav-link" href="./aboutus.php">ABOUT US</a>
                 </li>
             </ul>
         </div>
