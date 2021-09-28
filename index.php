@@ -28,6 +28,13 @@
             </div>
         </div>
     </section>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <?php include("./content.php"); ?>
+            </div>
+        </div>
+    </section>
     <section class="container-fluid fixed-bottom">
         <div class="row">
             <div class="col-12 px-0">
