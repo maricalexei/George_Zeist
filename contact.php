@@ -14,7 +14,7 @@
             </div>
         </div>
     </div>
-    <div class="col-4">
+    <div class="col-4 contactborder">
         <div class="container">
             <div class="card-body">
                 <h5 class="card-title">Contact</h5>
