@@ -1,3 +1,4 @@
+<div class="container">
 <div class="row px-0">
     <div class="col-4">
         <div class="container">
@@ -59,4 +60,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>
