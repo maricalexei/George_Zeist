@@ -2,7 +2,7 @@
 $active = (isset($_GET["content"])) ? $_GET["content"] : "";
 ?>
 
-<div class="container" style="font-family: 'Times New Roman',sans-serif;">
+<div class="container-fluid" style="font-family: 'Times New Roman',sans-serif; padding-left: 250px; padding-right: 250px">
     <nav class="navbar navbar-expand-lg navbar-light" style=" border-bottom: black">
         <a class="navbar-brand" style="padding-left: 10px" href="./index.php?content=home">
             <h1>

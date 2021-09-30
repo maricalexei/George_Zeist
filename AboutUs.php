@@ -19,4 +19,4 @@
 				<img src="img/George zeist medewerkers foto.jpg">
 			</div>
 		</div>
-	</div>
+    </div>
