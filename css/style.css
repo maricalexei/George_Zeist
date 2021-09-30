@@ -162,8 +162,13 @@
 		margin-right: auto;
 		width: 50%;
 	}
+	#insta {
+		text-decoration: none;
+			}
+#facebook {
+		text-decoration: none;
 
-}
+			}
 .contactborder{
 	border: 1px;
 	border-right-style: solid;
@@ -180,3 +185,4 @@
 
 
 
+}

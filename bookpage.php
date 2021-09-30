@@ -3,50 +3,6 @@
 <head>
 
     <style>
-        .vl {
-            border-left: 1px solid black;
-            height: 400px;
-        }
-
-        .vl0 {
-            border-left: 0px solid black;
-            height: 300px;
-        }
-
-        .hl {
-            padding-top: 20px;
-            border-bottom: 1px solid black;
-            margin-bottom: 20px;
-        }
-
-        .hl0 {
-            padding-top: 20px;
-            border-bottom: 0px solid black;
-            margin-bottom: 20px;
-        }
-
-        .pdt {
-            padding-top: 100px;
-        }
-
-        .TextC {
-            text-align: center;
-        }
-
-        .Bcenter {
-            margin-top: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-        #insta {
-	                text-decoration: none;
-        }
-        #facebook {
-	                text-decoration: none;
-                    
-}
 
 
     </style>
