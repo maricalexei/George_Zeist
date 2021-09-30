@@ -5,7 +5,7 @@
     <style>
         .vl {
             border-left: 1px solid black;
-            height: 300px;
+            height: 400px;
         }
 
         .vl0 {
@@ -40,6 +40,15 @@
             margin-right: auto;
             width: 50%;
         }
+        #insta {
+	                text-decoration: none;
+        }
+        #facebook {
+	                text-decoration: none;
+                    
+}
+
+
     </style>
 </head>
 
@@ -48,7 +57,8 @@
         <section class="container">
             <div class="row">
                 <div class="col-xl-4">
-
+                <div class="card border-0">
+                    <div class="card-body">
                     <h2>GET TOGETHER WITH GEORGE</h2>
                     Over the years, we've hosted a variety of events. From private birthday parties, PR-events and
                     exclusive product launches, to corporate events, luncheons and walking dinners for large groups.
@@ -56,19 +66,30 @@
                     George will offer you just that – and more.
                     Our venues come in various sizes, each with their own style. With great food & beverages options,
                     top-notch facilities and an amazing crew that is highly experienced.
+                    </div>
+                    </div>
+                   
                 </div>
 
                 <div class="col-xl-4 vl">
-                    Image
+                <div class="card" style="margin-top: 40px;">
+                <img class="card-img-top" src="img/champagneD.PNG" alt="Card image cap">
                 </div>
+                </div>
+                
 
                 <div class="col-xl-4 vl">
+                <div class="card border-0">
+                    <div class="card-body">
                     Hosting a private party for a special occasion? Your guests will love cosy Georgette at the P.C.
                     Hooftstraat. Organizing a corporate event? Then George Marina is the perfect choice. Planning a
                     press event or influencer lunch to boost your brand? George W.P.A. is an ideal, comfy spot. Either
                     way, no matter which location you choose, we'll make sure you and your guests feel right at home.
 
-                    <h2>ANYTHING IS POSSIBLE. JUST ASK US ABOUT THE POSSIBILITIES.</h2>
+                    <h3>ANYTHING IS POSSIBLE. JUST ASK US ABOUT THE POSSIBILITIES.</h3>
+                    </div>
+                    </div>
+                    
 
                 </div>
 
@@ -76,7 +97,9 @@
             <div class="hl"></div>
             <div class="row">
                 <div class="col-xl-4">
-                    img
+                <div class="card border-0" style="margin-top: 40px;">
+                <img class="card-img-top" src="img/PicD.PNG" alt="Card image cap">
+                </div>
                 </div>
                 <div class="col-xl-4 vl0">
                     OUR VENUES COME IN VARIOUS SIZES, EACH WITH THEIR OWN STYLE.
@@ -84,7 +107,9 @@
                     TOP-NOTCH FACILITIES AND AN AMAZING CREW THAT IS HIGHLY EXPERIENCED.
                 </div>
                 <div class="col-xl-4 vl0">
-                    img
+                <div class="card border-0">
+                <img class="card-img-top" src="img/TableD.PNG" alt="Card image cap" width="300px" height="300px">
+                </div>
                 </div>
             </div>
             <div class="hl"></div>
@@ -152,8 +177,9 @@
 
                 </div>
             </div>
+            <div class="hl"></div>
             </div>
-
+            
             <div class="row">
                 <div class="col-xl-5">
                     <h2 class="TextC">Let us contact you!</h2>
@@ -170,9 +196,15 @@
                 </div>
                 <div class="col-xl-2 vl">
                     <h2 class="TextC">SOCIAL MEDIA</h2>
+                    <a id="insta" href="https://www.instagram.com/georgeamsterdam">
+                        <img src="img/InstagramD.PNG" alt="InstgramD" width="50" height="40" style="margin-top: 100px;">
+                    </a>
+                    <a id="facebook" href="https://www.facebook.com/pages/category/Restaurant/George-Amsterdam">
+                        <img src="img/facebookd.png" alt="FacebookD" width="45" height="40" style="margin-top: 100px; margin-left: 110px;">
+                    </a>
                 </div>
                 <div class="col-xl-5 vl">
-
+                    <img src="img/Pic2D.PNG" alt="">
                 </div>
                 <div class="hl0"></div>
         </section>
