@@ -3,6 +3,50 @@
 <head>
 
     <style>
+        .vl {
+            border-left: 1px solid black;
+            height: 400px;
+        }
+
+        .vl0 {
+            border-left: 0px solid black;
+            height: 300px;
+        }
+
+        .hl {
+            padding-top: 20px;
+            border-bottom: 1px solid black;
+            margin-bottom: 20px;
+        }
+
+        .hl0 {
+            padding-top: 20px;
+            border-bottom: 0px solid black;
+            margin-bottom: 20px;
+        }
+
+        .pdt {
+            padding-top: 100px;
+        }
+
+        .TextC {
+            text-align: center;
+        }
+
+        .Bcenter {
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        #insta {
+	                text-decoration: none;
+        }
+        #facebook {
+	                text-decoration: none;
+                    
+}
 
 
     </style>
@@ -64,7 +108,7 @@
                 </div>
                 <div class="col-xl-4 vl0">
                 <div class="card border-0">
-                <img class="card-img-top" src="img/TableD.PNG" alt="Card image cap" width="300px" height="300px">
+                <img class="card-img-top" src="img/TableD.PNG" alt="Card image cap" width="00px" height="300px">
                 </div>
                 </div>
             </div>
@@ -78,7 +122,7 @@
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-outline-dark Bcenter" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
-                        Launch demo modal
+                        Make a event
                     </button>
 
                     <!-- Modal -->
@@ -87,7 +131,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">EV</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Event Tabel</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -156,7 +200,7 @@
                         <img src="img/InstagramD.PNG" alt="InstgramD" width="50" height="40" style="margin-top: 100px;">
                     </a>
                     <a id="facebook" href="https://www.facebook.com/pages/category/Restaurant/George-Amsterdam">
-                        <img src="img/facebookd.png" alt="FacebookD" width="45" height="40" style="margin-top: 100px; margin-left: 110px;">
+                        <img src="img/facebookd.png" alt="FacebookD" width="45" height="40" style="margin-top: 100px; margin-left: 170px;">
                     </a>
                 </div>
                 <div class="col-xl-5 vl">
