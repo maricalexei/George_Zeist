@@ -6,7 +6,7 @@
                 <hr>
             </div>
             <div class="mb-3">
-                <label for="disabledSelect" class="form-label">Disabled select menu</label>
+                <label for="disabledSelect" class="form-label">Choose a table</label>
                 <select id="disabledSelect" class="form-select">
                     <option>1</option>
                     <option>2</option>
