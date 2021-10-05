@@ -24,13 +24,13 @@
                     Email: contact@george-kanaleneiland.nl<br>
                     <br>
                     Working Hours:<br>
-                    dinsdag: 11:00–01:00<br>
-                    woensdag: 11:00–01:00<br>
-                    donderdag: 11:00–01:00<br>
-                    vrijdag: 11:00–01:00<br>
-                    zaterdag: 11:00–01:00<br>
-                    zondag: 11:00–01:00<br>
-                    maandag: 11:00–01:00<br>
+                    teusday: 11:00–01:00<br>
+                    Wensday: 11:00–01:00<br>
+                    Thursday: 11:00–01:00<br>
+                    Friday: 11:00–01:00<br>
+                    Saturday: 11:00–01:00<br>
+                    Sunday: 11:00–01:00<br>
+                    Monday: 11:00–01:00<br>
                 </p>
             </div>
         </div>
