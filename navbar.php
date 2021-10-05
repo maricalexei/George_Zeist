@@ -16,8 +16,8 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
         <div style="padding-left: 36px; padding-right: 16px"></div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item nav_padding" style="border-left: 1px solid black;">
-                    <a class="nav-link" href="#">LOCATIONS</a>
+                <li class="nav-item nav_padding" style="">
+                    <a class="nav-link" href="./index.php?content=reservation">RESERVATION</a>
                 </li>
                 <li class="nav-item nav_padding">
                     <a class="nav-link" href="./index.php?content=contact">CONTACT</a>
@@ -31,7 +31,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
                 <li class="nav-item nav_padding">
                     <a class="nav-link" href="./index.php?content=AboutUs">ABOUT US</a>
                 </li>
-                <li class="nav-item nav_padding">
+                <li class="nav-item" style="padding-left: 36px">
                     <a class="nav-link" href="./index.php?content=menu">MENU</a>
                 </li>
             </ul>
