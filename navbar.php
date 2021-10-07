@@ -26,9 +26,6 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
                     <a class="nav-link" href="./index.php?content=bookpage">BOOK EVENT</a>
                 </li>
                 <li class="nav-item nav_padding">
-                    <a class="nav-link" href="#">RESERVATION</a>
-                </li>
-                <li class="nav-item nav_padding">
                     <a class="nav-link" href="./index.php?content=AboutUs">ABOUT US</a>
                 </li>
                 <li class="nav-item" style="padding-left: 36px">
