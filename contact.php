@@ -1,6 +1,7 @@
+<div class="container">
 <div class="row px-0">
     <div class="col-4">
-        <div class="">
+        <div class="container">
             <div class="card-body">
                 <h5 class="card-title">Contact</h5>
                 <p class="card-text">
@@ -14,8 +15,11 @@
             </div>
         </div>
     </div>
-    <div class="col-4">
-        <div class="">
+    <div class="col-4 contactborder" 
+        style="border: 1px;
+	    border-right: 1px solid black;
+	    border-left-style: solid;">
+        <div class="container">
             <div class="card-body">
                 <h5 class="card-title">Contact</h5>
                 <p class="card-text">
@@ -23,19 +27,19 @@
                     Email: contact@george-kanaleneiland.nl<br>
                     <br>
                     Working Hours:<br>
-                    dinsdag: 11:00–01:00<br>
-                    woensdag: 11:00–01:00<br>
-                    donderdag: 11:00–01:00<br>
-                    vrijdag: 11:00–01:00<br>
-                    zaterdag: 11:00–01:00<br>
-                    zondag: 11:00–01:00<br>
-                    maandag: 11:00–01:00<br>
+                    teusday: 11:00–01:00<br>
+                    Wensday: 11:00–01:00<br>
+                    Thursday: 11:00–01:00<br>
+                    Friday: 11:00–01:00<br>
+                    Saturday: 11:00–01:00<br>
+                    Sunday: 11:00–01:00<br>
+                    Monday: 11:00–01:00<br>
                 </p>
             </div>
         </div>
     </div>
     <div class="col-4">
-        <div class="mapouter">
+        <div class="container">
             <div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=Slotlaan%20280%2C%203701%20GW%20Zeist&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
@@ -47,7 +51,7 @@
                         height: 400px;
                         width: 400px;
                     }
-                </style><a </a>
+                </style>
                 <style>
                     .gmap_canvas {
                         overflow: hidden;
@@ -59,4 +63,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>
