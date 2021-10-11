@@ -6,7 +6,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
     <nav class="navbar navbar-expand-lg navbar-light" style=" border-bottom: black">
         <a class="navbar-brand" style="padding-left: 10px" href="./index.php?content=home">
             <h1>
-                <b style="font-size: 36px; padding-right: 300px">GEORGE</b>
+                <b style="font-size: 36px; padding-right: 100px">GEORGE</b>
             </h1>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
