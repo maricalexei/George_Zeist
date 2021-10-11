@@ -8,7 +8,8 @@
                 </div>
                 <div class=mb-3>
                 <label for input="InputPassword" class="form-label">Password<br></label>
-                <input name="Password" type="Password" class="form-control" id="InputPassword"></input>
+                <input name="Password" type="Password" class="form-control" id="InputPassword"></input><br><br>
+                <button type="submit" class="btn btn-secondary btn-lg btn-block">Login</button>
                 </div>
             </form>
         </div>
