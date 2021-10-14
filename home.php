@@ -1,5 +1,44 @@
+
+<style>
+
+.vl {
+		border-left: 1px solid black;
+		height: 300px;
+	}
+</style>
+
 <div class="section">
     <div class="container">
+        <div class="row">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Click here for the latest covid-19 updates
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">COVID-19 UPDATE
+                        <img src="img/CoronaPageD.png" alt="" width="200" height="200">
+                    </div>
+                    <div class="col-6 vl">
+                
+
+                    </div>
+                </div>
+                </div>
+                
+                </div>
+            </div>
+            </div>
+        </div>
         <div class="row">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
