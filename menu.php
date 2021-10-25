@@ -45,11 +45,11 @@
               <form action="/action_page.php">
                 <fieldset>
                   <legend>Legenda</legend>
-                  <label for="Fname">tarwe free:<img src="image/glutenfree.png" alt="city" style="width:8%"></label>
+                  <label for="Fname">tarwe free:<img src="img/glutenfree.png" alt="city" style="width:8%"></label>
                   <br><br>
-                  <label for="Lname">lactose free:<img src="image/istockphoto-1162535929-612x612.jpg" alt="city" style="width:5%"></label>
+                  <label for="Lname">lactose free:<img src="img/istockphoto-1162535929-612x612.jpg" alt="city" style="width:5%"></label>
                   <br><br>
-                  <label for="Dname">Vegan:<img src="image/vegetarian-cuisine-vegetarianism-veganism-symbol-vegetarian-and-non-vegetarian-marks-png-favpng-4XMHPBUkGn9dKaSjb1hSnC7B7_t.jpg" alt="city" style="width:8%"></label>
+                  <label for="Dname">Vegan:<img src="img/vegetarian-cuisine-vegetarianism-veganism-symbol-vegetarian-and-non-vegetarian-marks-png-favpng-4XMHPBUkGn9dKaSjb1hSnC7B7_t.jpg" alt="city" style="width:8%"></label>
                 </fieldset>
               </form>
             </div>
