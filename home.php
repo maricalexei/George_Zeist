@@ -1,5 +1,22 @@
+
+<style>
+
+.vl {
+		border-left: 1px solid black;
+		height: 300px;
+        
+	}
+
+</style>
+
+
 <div class="section">
     <div class="container">
+
+        <div class="row">
+        
+           
+        </div>
         <div class="row">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
