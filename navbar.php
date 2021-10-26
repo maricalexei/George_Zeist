@@ -16,7 +16,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
                 <div class="toast-body">
                  <!-- Button trigger modal -->
                 <div class="buttond" >
-                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="paddingbackground-color: white; margin: auto;">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: white; margin: auto;">
                 Click here for the latest covid-19 updates
                 </button>
                 </div>
