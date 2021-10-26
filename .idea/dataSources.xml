@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://localhost:3306/georgemboutrecht</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="ERD_AH_Casus" uuid="3bf6d675-8a73-42ad-b99b-528f8a96458e">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Projects\Project_Semester_2\George_Zeist\img\ERD_AH_Casus.vpp</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
