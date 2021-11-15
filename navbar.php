@@ -6,7 +6,6 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
 
 </style>
 
-
 <div class="container" style="">
 <div class="row">
     <div class="col-12">

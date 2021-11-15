@@ -3,7 +3,7 @@
   $email = (isset($_GET["email"]))? $_GET["email"]: "";
   $pwh = (isset($_GET["pwh"]))? $_GET["pwh"]: "";
 
-  
+  //Message for errors
   switch($alert) {
     case "no-email" :
       echo '<div class="alert alert-info mt-5 w-50 mx-auto text-center" role="alert">

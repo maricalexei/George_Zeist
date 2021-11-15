@@ -1,4 +1,5 @@
 <?php
+//Database info
 define("SERVERNAME", "localhost");
 define("USERNAME", "GeorgeUser");
 define("PASSWORD", "George123");
