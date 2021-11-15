@@ -26,7 +26,7 @@
         </div>
         
         <img src="img\reservation.jpg" usemap="#image-map">
-
+        
         <map name="image-map">
             <area target="_self" alt="1" title="1" href="index.php?content=reservation&table=1" coords="197,39,264,130"
                 shape="rect">

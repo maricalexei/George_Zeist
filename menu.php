@@ -20,7 +20,7 @@
               <p style="font-size:12px">w/ fresh tuna</p>
               <p style="font-size:20px">-Kale avocado salad <span style="float: right">16</span></p>
               <p style="font-size:12px">w/ corn crunch & yuzu dressing</p>
-              <p style="font-size:20px">Salade riche<span style="float: right">26</span></p>
+              <p style="font-size:20px">Salade riche<span style="float: right">26</span></p> 
               <p style="font-size:12px">w/ lobster, smoked salmon, egg, steak tartare & foie gras royale</p>
               <hr style="Height:5px;">
               <h1 class="display-4">Diner</h1>

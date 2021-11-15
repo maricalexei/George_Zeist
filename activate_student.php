@@ -1,4 +1,5 @@
 <?php
+
 if (!(isset($_GET["content"]) && isset($_GET["email"]) && isset($_GET["pwh"]))) {
   header("Location: ./index.php?content=message&alert=hacker-alert");
   exit();
