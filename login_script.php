@@ -1,6 +1,7 @@
 <?php
 var_dump($_POST);
 include("./connect_db.php");
+include("./functions.php");
 
 if (empty($email) || empty($password)) {
   // Check of de loginformvelden zijn ingevuld...

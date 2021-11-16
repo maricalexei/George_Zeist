@@ -72,7 +72,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
     <nav class="navbar navbar-expand-lg navbar-light" style=" border-bottom: black">
         <a class="navbar-brand" style="padding-left: 10px" href="./index.php?content=home">
             <h1>
-                <b style="font-size: 36px; padding-right: 100px">GEORGE</b>
+                <b style="font-size: 36px; padding-right: 0px">GEORGE</b>
             </h1>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -97,8 +97,14 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
                 <li class="nav-item nav_padding <?php echo ($active == "menu") ? "active" : "" ?>">
                     <a class="nav-link" href="./index.php?content=menu">MENU</a>
                 </li>
-                <li class="nav-item <?php echo ($active == "career") ? "active" : "" ?>" style="padding-left: 36px">
+                <li class="nav-item nav_padding <?php echo ($active == "career") ? "active" : "" ?>">
                     <a class="nav-link" href="./index.php?content=career">CAREER</a>
+                </li>
+                <li class="nav-item nav_padding <?php echo ($active == "login") ? "active" : "" ?>">
+                    <a class="nav-link" href="./index.php?content=login">LOGIN</a>
+                </li>
+                <li class="nav-item nav_padding <?php echo ($active == "register") ? "active" : "" ?>">
+                    <a class="nav-link" href="./index.php?content=register">REGISTER</a>
                 </li>
             </ul>
         </div>

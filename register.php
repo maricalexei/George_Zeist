@@ -12,7 +12,7 @@
       </form>
     </div>
     <div class="col-12 col-sm-6">
-      <img src="./img/card3.png" alt="kersen" class="w-75 mx-auto d-block">
+      <img src="./img/George-building.jpg" alt="kersen" class="w-75 mx-auto d-block">
     </div>
   </div>
 </div>
