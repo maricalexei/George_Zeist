@@ -16,6 +16,7 @@ if (!check_userrole($email, array('klant', 'eigenaar', 'docent', 'begeleider')) 
   header("Location: ./index.php?content=message&alert=wrongactivationpage");
   exit();
 } 
+
 else {
 ?>
 

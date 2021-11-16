@@ -15,6 +15,7 @@
             </div>
         </div>
     </div>
+    
     <div class="col-4 contactborder" 
         style="border: 1px;
 	    border-right: 1px solid black;

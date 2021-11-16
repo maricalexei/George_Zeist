@@ -6,7 +6,6 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
 
 </style>
 
-
 <div class="container" style="">
 <div class="row">
     <div class="col-12">
@@ -16,17 +15,17 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
                 <div class="toast-body">
                  <!-- Button trigger modal -->
                 <div class="buttond" >
-                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: white; margin: auto;">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#CoronaPage" style="background-color: white; margin: auto;">
                 Click here for the latest covid-19 updates
                 </button>
                 </div>
 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="CoronaPage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <h5 class="modal-title" id="CoronaPage"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -83,20 +82,23 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
         <div style="padding-left: 36px; padding-right: 16px"></div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item nav_padding" style="">
+                <li class="nav-item nav_padding <?php echo ($active == "reservation") ? "active" : "" ?>" style="">
                     <a class="nav-link" href="./index.php?content=reservation">RESERVATION</a>
                 </li>
-                <li class="nav-item nav_padding">
+                <li class="nav-item nav_padding <?php echo ($active == "contact") ? "active" : "" ?>">
                     <a class="nav-link" href="./index.php?content=contact">CONTACT</a>
                 </li>
-                <li class="nav-item nav_padding">
+                <li class="nav-item nav_padding <?php echo ($active == "bookpage") ? "active" : "" ?>">
                     <a class="nav-link" href="./index.php?content=bookpage">BOOK EVENT</a>
                 </li>
-                <li class="nav-item nav_padding">
+                <li class="nav-item nav_padding <?php echo ($active == "AboutUs") ? "active" : "" ?>">
                     <a class="nav-link" href="./index.php?content=AboutUs">ABOUT US</a>
                 </li>
-                <li class="nav-item" style="padding-left: 36px">
+                <li class="nav-item nav_padding <?php echo ($active == "menu") ? "active" : "" ?>">
                     <a class="nav-link" href="./index.php?content=menu">MENU</a>
+                </li>
+                <li class="nav-item <?php echo ($active == "career") ? "active" : "" ?>" style="padding-left: 36px">
+                    <a class="nav-link" href="./index.php?content=career">CAREER</a>
                 </li>
             </ul>
         </div>

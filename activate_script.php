@@ -20,7 +20,6 @@
   $teacher = (isset($_POST["teacher"]))? $_POST["teacher"]: "";
   $lessonseries = (isset($_POST["lessonseries"]))? $_POST["lessonseries"]: "";
 
-  
   if (empty($_POST["password"]) || empty($_POST["passwordCheck"])) {
     header("Location: ./index.php?content=message&alert=password-empty&email=$id&pwh=$pwh");
   } 

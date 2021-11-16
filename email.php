@@ -1,4 +1,5 @@
 <?php
+  //verification email
   $message = '<!doctype html>
   <html lang="en">
     <head>

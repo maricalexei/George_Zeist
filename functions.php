@@ -6,7 +6,7 @@
     $data = trim($data);
     return $data;
   }
-
+  //Password Hash
   function mk_password_hash_from_microtime() {
     $mut = microtime();
 
@@ -57,7 +57,7 @@
     }
     return $userrole;
   }
-
+  //checkt de user role
   function check_userrole($email, $userroles) {
     global $conn;
 
