@@ -1,4 +1,3 @@
-
 <div class="container footer_bar" style="padding-top: 15px;">
     <section>
         <div class="row">
