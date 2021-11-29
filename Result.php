@@ -8,7 +8,7 @@ $plt = $conn->query("SELECT `id` FROM `restaurantinschrijving`");
 
 ?>
 <body>
-//from for the create of the database
+<!--from for the create of the database -->
     <form method="post">
         <label>Judgment</label>
         <input type="text" name="oordeel" placeholder="Enter Oordeel">
@@ -53,12 +53,12 @@ $plt = $conn->query("SELECT `id` FROM `restaurantinschrijving`");
         ?>
         </select>
         <br><br>
-        //button
+        <!--button-->
         <input type="submit" name="submit" value="Submit">
     </form>
 
     <hr>
-    //The read from the database
+    <!--The read from the database-->
     <h3>Results List</h3>
     <table style="width: 80%" border="1">
         <tr>
@@ -73,6 +73,7 @@ $plt = $conn->query("SELECT `id` FROM `restaurantinschrijving`");
         $run= $conn->query($qry);
         if($run->num_rows>0){
             while($row=$run->fetch_assoc()){
+                $id = $row['id'];
         ?>
         <tr>
             <td><?php echo $row['id']?></td>
@@ -80,10 +81,10 @@ $plt = $conn->query("SELECT `id` FROM `restaurantinschrijving`");
             <td><?php echo $row['oordeel']?></td>
             <td><?php echo $row['voldoende']?></td>
             <td><?php echo $row['begeleider']?></td>
-            //edit and deletion of the items
+            <!--edit and deletion of the items-->
             <td>
-                <a href="#">edit</a>
-                <a href="#">delete</a>
+                <a href="edit.php?id=<?php echo $id; ?>">edit</a>
+                <a href="delete.php?id=<?php echo $id; ?>">Delete</a>
         </tr>
         <?php
             }
@@ -100,7 +101,8 @@ if(isset($_POST['submit'])){
     $qry="INSERT INTO beoordeling values(null, '$lespakket', '$oordeel', '$voldoende', '$docent', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
 // looking if it works or if it gives errors
     if(mysqli_query($conn, $qry)){
-        echo '<script>alert("");</script>';
+        header('location: index.php?content=result');
+
     }else{
         echo mysqli_error($conn);
         }
