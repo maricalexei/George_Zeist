@@ -1,3 +1,22 @@
+<?php
+include("./connect_db.php");
+
+
+if(isset($_POST['submit'])){
+    $tablenumber = $_GET['table'];
+    $time = $_POST['time'];
+    $pers = $_POST['pers'];
+    $achternaam = $_POST['achternaam'];
+    $day = $_POST['day'];
+    $qry = "INSERT INTO `reserveringen` (`id`, `TafelNr`, `Pers`, `Achternaam`, `Tijd`, `Day`) VALUES (NULL, '$tablenumber', '$pers', '$achternaam', '$time', '$day')";
+if(mysqli_query($conn, $qry)){
+    header("Location: ./index.php?content=message&alert=book-success");
+}else{
+        header("Location: ./index.php?content=message&alert=book-failed");
+    }
+}
+
+?>
 <div class="section">
     <div class="container">
         <div class="content-section">
@@ -8,25 +27,45 @@
         </div>
         <div class="modal" id="modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
-                <form action="">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Reserve</h5>
+                <form action="" method="post">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Reserve</h5>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Table number</h5>
+                            <p id="tableNumber" name='tablenumber'></p>
+                            <div class="mb-3">
+                                <label for="Achternaam" class="form-label">Surname</label>
+                                <input type="text" name='achternaam' require class="form-control" id="achternaam" placeholder="Surname">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Pers"  class="form-label">Amount of people</label>
+                                <input type="number" name='pers' require min="0" class="form-control" id="pers" placeholder="Amount">
+                            </div>
+                            <div class="mb-3">
+                                <label for="day"  require class="form-label">Day</label>
+                                <input type="date" name='day' class="form-control" id="day" placeholder="Day">
+                            </div>
+                            <div class="mb-3">
+                                <label for="time"  require class="form-label">Time</label>
+                                <input type="time" name='time' class="form-control" id="time" placeholder="Time">
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" class="btn btn-primary" name="submit" value="Save changes" />
+
+                            <a href="index.php?content=reservation"><button type="button" class="btn btn-secondary"
+                                    data-dismiss="modal">Close </button></a>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <p id="test"></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        <a href="index.php?content=reservation"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close </button></a>
-                    </div>
-                </div>
                 </form>
             </div>
         </div>
-        
+
         <img src="img\reservation.jpg" usemap="#image-map">
-        
+
         <map name="image-map">
             <area target="_self" alt="1" title="1" href="index.php?content=reservation&table=1" coords="197,39,264,130"
                 shape="rect">
@@ -96,9 +135,11 @@
 <?php
 if(isset($_GET['table'])){
     var_dump($_GET["table"]);
-    print('<script>document.getElementById("test").innerHTML = "'.$_GET["table"] .'"; 
+    print('<script>document.getElementById("tableNumber").innerHTML = "'.$_GET["table"] .'"; 
     $(".modal").toggle();
     </script>');
+    
 }
+
 
 ?>

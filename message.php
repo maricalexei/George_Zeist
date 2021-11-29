@@ -128,6 +128,18 @@
             </div>';
             header("Refresh: 3; ./index.php?content=home");
     break;
+    case "book-success" :
+      echo '<div class="alert alert-success mt-5 w-50 mx-auto text-center" role="alert">
+              You succesfully booked, You will be sent to the reservation page...
+            </div>';
+      header("Refresh: 3; ./index.php?content=reservation");
+    break;
+    case "book-failed" :
+      echo '<div class="alert alert-danger mt-5 w-50 mx-auto text-center" role="alert">
+              You failed to fill in all the parts, You will be sent to the reservation page...
+            </div>';
+      header("Refresh: 3; ./index.php?content=reservation");
+    break;
     default:
       header("Location: ./index.php?content=home");
     break;
