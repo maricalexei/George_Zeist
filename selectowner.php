@@ -44,7 +44,6 @@
     //         //echo $row[];
     //     }
     // }
-    var_dump($sql);
 ?>`
 <div class="row">
       <div class="col-12">
