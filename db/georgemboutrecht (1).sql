@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 29, 2021 at 01:31 PM
--- Server version: 5.7.31
--- PHP Version: 7.4.9
+-- Gegenereerd op: 07 dec 2021 om 13:42
+-- Serverversie: 5.7.31
+-- PHP-versie: 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,13 +20,11 @@ SET time_zone = "+00:00";
 --
 -- Database: `georgemboutrecht`
 --
-CREATE DATABASE IF NOT EXISTS `georgemboutrecht` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `georgemboutrecht`;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `begeleidersrooster`
+-- Tabelstructuur voor tabel `begeleidersrooster`
 --
 
 DROP TABLE IF EXISTS `begeleidersrooster`;
@@ -42,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `begeleidersrooster` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `beoordeling`
+-- Tabelstructuur voor tabel `beoordeling`
 --
 
 DROP TABLE IF EXISTS `beoordeling`;
@@ -57,12 +55,19 @@ CREATE TABLE IF NOT EXISTS `beoordeling` (
   PRIMARY KEY (`id`),
   KEY `fk_Beorrdeling_RI_idx` (`inschrijving`),
   KEY `fk_Beoordeling_Medewerker_idx` (`begeleider`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `beoordeling`
+--
+
+INSERT INTO `beoordeling` (`id`, `inschrijving`, `oordeel`, `voldoende`, `begeleider`, `createdAt`, `updatedAt`) VALUES
+(1, 5, 'f', 3, 'Y', '2021-12-07 13:00:53', '2021-12-07 13:00:53');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `beroep`
+-- Tabelstructuur voor tabel `beroep`
 --
 
 DROP TABLE IF EXISTS `beroep`;
@@ -71,10 +76,17 @@ CREATE TABLE IF NOT EXISTS `beroep` (
   PRIMARY KEY (`beroep`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Gegevens worden geëxporteerd voor tabel `beroep`
+--
+
+INSERT INTO `beroep` (`beroep`) VALUES
+('kok');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `klant`
+-- Tabelstructuur voor tabel `klant`
 --
 
 DROP TABLE IF EXISTS `klant`;
@@ -95,7 +107,7 @@ CREATE TABLE IF NOT EXISTS `klant` (
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `klant`
+-- Gegevens worden geëxporteerd voor tabel `klant`
 --
 
 INSERT INTO `klant` (`id`, `voornaam`, `tussenvoegsel`, `achternaam`, `email`, `mobiel`, `rol`, `createdAt`, `updatedAt`, `emailVerified`) VALUES
@@ -106,7 +118,7 @@ INSERT INTO `klant` (`id`, `voornaam`, `tussenvoegsel`, `achternaam`, `email`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `lespakket`
+-- Tabelstructuur voor tabel `lespakket`
 --
 
 DROP TABLE IF EXISTS `lespakket`;
@@ -122,7 +134,7 @@ CREATE TABLE IF NOT EXISTS `lespakket` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `lespakket`
+-- Gegevens worden geëxporteerd voor tabel `lespakket`
 --
 
 INSERT INTO `lespakket` (`lespakket`, `omschrijving`, `aantalLessenKok`, `aantalLessenBarman`, `aantalLessenOber`, `createdAt`, `updatedAt`) VALUES
@@ -134,7 +146,7 @@ INSERT INTO `lespakket` (`lespakket`, `omschrijving`, `aantalLessenKok`, `aantal
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mededeling`
+-- Tabelstructuur voor tabel `mededeling`
 --
 
 DROP TABLE IF EXISTS `mededeling`;
@@ -148,7 +160,7 @@ CREATE TABLE IF NOT EXISTS `mededeling` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `medewerker`
+-- Tabelstructuur voor tabel `medewerker`
 --
 
 DROP TABLE IF EXISTS `medewerker`;
@@ -164,19 +176,21 @@ CREATE TABLE IF NOT EXISTS `medewerker` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `medewerker`
+-- Gegevens worden geëxporteerd voor tabel `medewerker`
 --
 
 INSERT INTO `medewerker` (`email`, `voornaam`, `tussenvoegsel`, `achternaam`, `mobiel`, `afkorting`) VALUES
 ('georgemarina@georgemarina.nl', 'George', '', 'Marina', '0612345678', 'GEMA'),
 ('hsok@mboutrecht.nl', 'Hans', '', 'Odijk', '0612345678', 'HSOK'),
 ('rra@mboutrecht.nl', 'Arjan', 'de', 'Ruijter', '0612345678', 'RRA'),
-('stevendejong@georgemarina.nl', 'Steven', 'de', 'Jong', '06123456', 'SNJG');
+('s@georgemarina.nl', 's', 'd', 'v', '0612345678', 'SSVV'),
+('stevendejong@georgemarina.nl', 'Steven', 'de', 'Jong', '06123456', 'SNJG'),
+('y@mboutrecht.nl', 's', 'v', 'd', '0612345678', 'Y');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `medewerkerrol`
+-- Tabelstructuur voor tabel `medewerkerrol`
 --
 
 DROP TABLE IF EXISTS `medewerkerrol`;
@@ -192,7 +206,7 @@ CREATE TABLE IF NOT EXISTS `medewerkerrol` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `password`
+-- Tabelstructuur voor tabel `password`
 --
 
 DROP TABLE IF EXISTS `password`;
@@ -208,7 +222,7 @@ CREATE TABLE IF NOT EXISTS `password` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `password`
+-- Gegevens worden geëxporteerd voor tabel `password`
 --
 
 INSERT INTO `password` (`email`, `passwd`, `createdAt`, `updatedAt`, `activated`, `rol`) VALUES
@@ -217,13 +231,13 @@ INSERT INTO `password` (`email`, `passwd`, `createdAt`, `updatedAt`, `activated`
 ('326356@student.mboutrecht.nl', '$2y$10$HA6lLAUIxQX2vdkZV7EFTegD6wxdQ1GEALnid3JOnv/aDX6Hv8lYS', '2021-10-26 12:48:22', '2021-10-26 12:48:22', 0, 'student'),
 ('327155@student.mboutrecht.nl', '$2y$10$H06O1padn6n1P4MYhEVVxukGArxAOLy2kBTC9UKoGhOw5LDb5hzLK', '2021-10-14 12:00:22', '2021-10-14 12:10:14', 1, 'student'),
 ('327156@student.mboutrecht.nl', '$2y$10$PoTOlTElEwDKWGQb8TPSHOseHCJytJIexFuM6/YJBgGTRFktiaEky', '2021-10-14 11:28:08', '2021-10-14 11:28:08', 0, 'student'),
-('341246@student.mboutrecht.nl', '$2y$10$Tpaw9LdM5IBz42RZmikWHOdbuaaUedOdT89Tv5LZAR2ecBLY.Gq1u', '2021-11-19 18:21:12', '2021-11-19 18:21:12', 0, 'student'),
-('35235216@student.mboutrecht.nl', '$2y$10$CkeVTF9R1hC7pAeEJVuSUecgtyGGAksXs0tKbpvOWcSPN2QXRGNNy', '2021-11-19 18:21:36', '2021-11-19 18:21:36', 0, 'student'),
+('332275@student.mboutrecht.nl', '$2y$10$yxOKVnc6ePVVkHON9SCBC.Y.6zNwjfNU5RGGvHQYSl.zEot8Larpq', '2021-11-22 14:01:17', '2021-11-22 14:01:17', 0, 'student'),
 ('456654@student.mboutrecht.nl', '$2y$10$wjFyxRcvuS0fUFsxuIU9gOAbOciO8IcX040i.IiCRskrlJjsm2EAK', '2021-10-14 10:11:32', '2021-10-14 10:29:43', 1, 'student'),
 ('654321@student.mboutrecht.nl', '$2y$10$saR.TVF3YlsWU8dNwDcIRO5P2/lzQlSnxeMyF6enXlTq6/5812j26', '2021-10-14 10:00:41', '2021-10-14 10:01:50', 1, 'student'),
 ('a@a', '$2y$10$lUjZamrDqHeUMMU/ZWY5BOeXMJE7hA0Hk27YcqPU0lKBREhExr/Wi', '2021-10-14 11:25:25', '2021-10-14 11:26:02', 1, 'klant'),
 ('arjanderuijter@gmail.com', '$2y$10$K7XA94EV2TNK.3WwQHWg0OxU48b2ZkPlRItujk.Rh1xC1gXPn77pq', '2021-10-14 04:53:03', '2021-10-14 04:53:37', 1, 'klant'),
 ('c@c.nl', '$2y$10$RGdL1mEe0aXfDYJ8LO8NK.w5A290TavzmCXDorVRxMB0xlPFGQGEW', '2021-10-14 11:30:25', '2021-10-14 11:30:25', 0, 'klant'),
+('f@f.nl', '$2y$10$/9nd3wi2o/zGDGK28qHDe.WEsOtHPotMxq1VHXXMx8Wr/PF9tsc3K', '2021-11-16 14:32:17', '2021-11-16 14:32:17', 0, 'klant'),
 ('georgemarina@georgemarina.nl', '$2y$10$DzNTIHOvKNy/gQImQHtxZuXK5tZk/u5GmkIxSkLi20wNt86fN.G2.', '2021-10-14 04:39:59', '2021-10-14 04:40:30', 1, 'eigenaar'),
 ('h@h.nl', '$2y$10$wxMrkmZEguP4uJURJ4/dmuEdk3xlNsUwJ/U1PR8ZqK5Rc/8e2ckxK', '2021-10-25 14:26:13', '2021-10-25 14:26:13', 0, 'klant'),
 ('hsok@mboutrecht.nl', '$2y$10$XVWZbBQvCnmrkGmLYcyn1uEcqyjI2mcOkuSO5vwDjioTpbHQCeCA6', '2021-10-14 10:10:03', '2021-10-14 10:10:37', 1, 'docent'),
@@ -233,12 +247,15 @@ INSERT INTO `password` (`email`, `passwd`, `createdAt`, `updatedAt`, `activated`
 ('q@q.nl', '$2y$10$oiO2l57PF8OH8RoQUMwhseNsOdICGqZJZXwO.2o.59YaxqxsPG2hq', '2021-10-14 11:20:30', '2021-10-14 11:20:30', 0, 'klant'),
 ('qwe@qwe.nl', '$2y$10$QfmMVKMEjW3rOJt.DrOjz.eF4xBCo0K6HasNUP00EdfQxad46kgea', '2021-10-26 12:09:29', '2021-10-26 12:09:29', 0, 'klant'),
 ('rra@mboutrecht.nl', '$2y$10$uGAkAWlFLPW4Fe8cd6jQaegq8l/Ci/w4EqSd0q4khRkilhyJ46hiS', '2021-10-14 04:33:24', '2021-10-14 04:33:53', 1, 'docent'),
-('stevendejong@georgemarina.nl', '$2y$10$6eW0zGDXgKKgKWuLxlU7veS2aS1207eGr.QKXiQkAtKpDUR/IWGvy', '2021-10-14 04:48:32', '2021-10-14 04:49:01', 1, 'begeleider');
+('s@georgemarina.nl', '$2y$10$Gn2/ZIbgXZ18iULd16C2W.43Wd1SXnK4XTbBIOmjBvWxmaVbleNGK', '2021-12-07 13:41:10', '2021-12-07 13:41:25', 1, 'begeleider'),
+('stevendejong@georgemarina.nl', '$2y$10$6eW0zGDXgKKgKWuLxlU7veS2aS1207eGr.QKXiQkAtKpDUR/IWGvy', '2021-10-14 04:48:32', '2021-10-14 04:49:01', 1, 'begeleider'),
+('y@mboutrecht.nl', '$2y$10$lH5HxvsQ0KNH6CHNLMBiUOLTqv/YCIaGC1pTZ9Sgj5JRcl3MAmohK', '2021-11-22 14:05:29', '2021-11-22 14:06:12', 1, 'docent'),
+('y@student.mboutrecht.nl', '$2y$10$LihE5MboaXofTqdiuTy2wOUCW74Bx4mBGKAny2/JM65VDSWIRT/we', '2021-11-22 14:02:02', '2021-11-22 14:02:54', 1, 'student');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reactie`
+-- Tabelstructuur voor tabel `reactie`
 --
 
 DROP TABLE IF EXISTS `reactie`;
@@ -254,7 +271,7 @@ CREATE TABLE IF NOT EXISTS `reactie` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reserveringen`
+-- Tabelstructuur voor tabel `reserveringen`
 --
 
 DROP TABLE IF EXISTS `reserveringen`;
@@ -266,12 +283,19 @@ CREATE TABLE IF NOT EXISTS `reserveringen` (
   `Tijd` time(6) NOT NULL,
   `Day` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `reserveringen`
+--
+
+INSERT INTO `reserveringen` (`id`, `TafelNr`, `Pers`, `Achternaam`, `Tijd`, `Day`) VALUES
+(1, '1', 2, 's', '18:00:00.000000', '2020-08-06');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `restaurantinschrijving`
+-- Tabelstructuur voor tabel `restaurantinschrijving`
 --
 
 DROP TABLE IF EXISTS `restaurantinschrijving`;
@@ -286,12 +310,19 @@ CREATE TABLE IF NOT EXISTS `restaurantinschrijving` (
   KEY `fk_RI_Student_idx` (`student`),
   KEY `fk_RI_Beroep_idx` (`beroep`),
   KEY `fk_RI_Werdag_idx` (`werkDatum`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `restaurantinschrijving`
+--
+
+INSERT INTO `restaurantinschrijving` (`id`, `werkDatum`, `student`, `beroep`, `createdAt`, `updatedAt`) VALUES
+(5, '2021-11-29', 123321, 'kok', '2021-12-07 13:00:38', '2021-12-07 13:00:38');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `review`
+-- Tabelstructuur voor tabel `review`
 --
 
 DROP TABLE IF EXISTS `review`;
@@ -311,7 +342,7 @@ CREATE TABLE IF NOT EXISTS `review` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rol`
+-- Tabelstructuur voor tabel `rol`
 --
 
 DROP TABLE IF EXISTS `rol`;
@@ -322,7 +353,7 @@ CREATE TABLE IF NOT EXISTS `rol` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `rol`
+-- Gegevens worden geëxporteerd voor tabel `rol`
 --
 
 INSERT INTO `rol` (`rol`, `omschrijving`) VALUES
@@ -335,7 +366,38 @@ INSERT INTO `rol` (`rol`, `omschrijving`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `student`
+-- Tabelstructuur voor tabel `schedule`
+--
+
+DROP TABLE IF EXISTS `schedule`;
+CREATE TABLE IF NOT EXISTS `schedule` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL,
+  `start_date` date NOT NULL,
+  `end_date` date NOT NULL,
+  `start_time` time(4) NOT NULL,
+  `end_time` time(4) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `schedule`
+--
+
+INSERT INTO `schedule` (`id`, `title`, `start_date`, `end_date`, `start_time`, `end_time`) VALUES
+(1, '12', '0012-12-12', '0012-12-12', '00:12:00.0000', '00:12:00.0000'),
+(2, '12', '0012-12-12', '0012-12-12', '00:12:00.0000', '00:12:00.0000'),
+(3, '12', '0012-12-12', '0012-12-12', '00:12:00.0000', '00:12:00.0000'),
+(4, '12', '0012-12-12', '0012-12-12', '00:12:00.0000', '00:12:00.0000'),
+(5, '12', '0012-12-12', '0012-12-12', '00:12:00.0000', '00:12:00.0000'),
+(6, '11', '0011-11-11', '0011-11-11', '11:11:00.0000', '11:11:00.0000'),
+(7, '11', '0011-11-11', '0011-11-11', '11:11:00.0000', '11:11:00.0000'),
+(8, '11', '0011-11-11', '0011-11-11', '11:11:00.0000', '11:11:00.0000');
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `student`
 --
 
 DROP TABLE IF EXISTS `student`;
@@ -360,7 +422,7 @@ CREATE TABLE IF NOT EXISTS `student` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `student`
+-- Gegevens worden geëxporteerd voor tabel `student`
 --
 
 INSERT INTO `student` (`studentnr`, `voornaam`, `tussenvoegsel`, `achternaam`, `mobiel`, `email`, `woonplaats`, `straat`, `postcode`, `rol`, `docent`, `lespakket`) VALUES
@@ -373,7 +435,7 @@ INSERT INTO `student` (`studentnr`, `voornaam`, `tussenvoegsel`, `achternaam`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `werkdag`
+-- Tabelstructuur voor tabel `werkdag`
 --
 
 DROP TABLE IF EXISTS `werkdag`;
@@ -386,78 +448,41 @@ CREATE TABLE IF NOT EXISTS `werkdag` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Constraints for dumped tables
+-- Beperkingen voor geëxporteerde tabellen
 --
 
 --
--- Constraints for table `begeleidersrooster`
+-- Beperkingen voor tabel `begeleidersrooster`
 --
 ALTER TABLE `begeleidersrooster`
   ADD CONSTRAINT `fk_BR_Begeleider` FOREIGN KEY (`begeleider`) REFERENCES `medewerker` (`afkorting`) ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_BR_Werkdag` FOREIGN KEY (`werkDatum`) REFERENCES `werkdag` (`datum`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `beoordeling`
+-- Beperkingen voor tabel `beoordeling`
 --
 ALTER TABLE `beoordeling`
   ADD CONSTRAINT `fk_Beoordeling_Medewerker` FOREIGN KEY (`begeleider`) REFERENCES `medewerker` (`afkorting`) ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_Beoordeling_RI` FOREIGN KEY (`inschrijving`) REFERENCES `restaurantinschrijving` (`id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `klant`
+-- Beperkingen voor tabel `klant`
 --
 ALTER TABLE `klant`
   ADD CONSTRAINT `fk_Klant_Password` FOREIGN KEY (`email`) REFERENCES `password` (`email`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_Klant_Rol` FOREIGN KEY (`rol`) REFERENCES `rol` (`rol`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `medewerker`
+-- Beperkingen voor tabel `medewerker`
 --
 ALTER TABLE `medewerker`
   ADD CONSTRAINT `fk_Medeqwerker_Password` FOREIGN KEY (`email`) REFERENCES `password` (`email`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `medewerkerrol`
---
-ALTER TABLE `medewerkerrol`
-  ADD CONSTRAINT `fk_MedewerkerRol_Med` FOREIGN KEY (`medewerker`) REFERENCES `medewerker` (`email`),
-  ADD CONSTRAINT `fk_MedewerkerRol_Rol` FOREIGN KEY (`rol`) REFERENCES `rol` (`rol`) ON UPDATE CASCADE;
-
---
--- Constraints for table `password`
+-- Beperkingen voor tabel `password`
 --
 ALTER TABLE `password`
   ADD CONSTRAINT `FK_rol_password` FOREIGN KEY (`rol`) REFERENCES `rol` (`rol`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `reactie`
---
-ALTER TABLE `reactie`
-  ADD CONSTRAINT `fk_Reactie_Review` FOREIGN KEY (`review`) REFERENCES `review` (`id`) ON UPDATE CASCADE;
-
---
--- Constraints for table `restaurantinschrijving`
---
-ALTER TABLE `restaurantinschrijving`
-  ADD CONSTRAINT `fk_RI_Beroep` FOREIGN KEY (`beroep`) REFERENCES `beroep` (`beroep`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_RI_Student` FOREIGN KEY (`student`) REFERENCES `student` (`studentnr`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_RI_Werdag` FOREIGN KEY (`werkDatum`) REFERENCES `werkdag` (`datum`) ON UPDATE CASCADE;
-
---
--- Constraints for table `review`
---
-ALTER TABLE `review`
-  ADD CONSTRAINT `fk_Review_Klant` FOREIGN KEY (`klant`) REFERENCES `klant` (`email`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_Review_Werkdag` FOREIGN KEY (`werkdag`) REFERENCES `werkdag` (`datum`) ON UPDATE CASCADE;
-
---
--- Constraints for table `student`
---
-ALTER TABLE `student`
-  ADD CONSTRAINT `fk_Student_Docent` FOREIGN KEY (`docent`) REFERENCES `medewerker` (`afkorting`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_Student_LesPakket` FOREIGN KEY (`lespakket`) REFERENCES `lespakket` (`lespakket`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_Student_Password` FOREIGN KEY (`email`) REFERENCES `password` (`email`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_Student_Rol` FOREIGN KEY (`rol`) REFERENCES `rol` (`rol`) ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
