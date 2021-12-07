@@ -4,15 +4,13 @@
             <div class="container">
                 <img src="./img/barman.jfif" alt="..." class="img-thumbnail">
                 <div class="card-body">
-                    <h3 class="card-title" style="border-bottom: solid black 1px;">Barman</h3>
+                    <h3 class="card-title" style="border-bottom: solid black 1px;">Bartender</h3>
                     <p class="card-text">
-                            Als barman leer je hoe je hoe je
-                            de beste drankjes maak voor de klanten
-                            van George Marina. Tijdens dit lessen pakket
-                            wordt je begeleid door een echte barman
-                            van George Marina, <br> zo zal hij jou leren
-                            hoe je efficient mooie en aantrekkelijke
-                            drankjes maakt voor de klanten van George Marina
+                            As a bartender you wil learn to make the best drinks
+                            for our customers of George Marina. When you sign on
+                            for these lessons you will be mentored by a real bartender of
+                            George Marina, <br> so he can learn you the most efficent way to make
+                            beautiful beverage for your customers 
                     </p>
                 </div>
             </div>
