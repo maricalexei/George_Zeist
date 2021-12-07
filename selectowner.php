@@ -10,7 +10,7 @@
 <body>
     
 <?php
-    $sql = "SELECT * FROM `KLANT`";
+    $sql = "SELECT * FROM `reserveringen`";
     $result = mysqli_query($conn, $sql);
     $resultCheck = mysqli_num_rows($result);
 
@@ -19,11 +19,11 @@
     while ($record = mysqli_fetch_assoc($result)) {
     $records .= "<tr>
                     <th scope='row'>" . $record["id"] . "</th>
-                    <td>" . $record["voornaam"] .  "</td>
-                    <td>" . $record["tussenvoegsel"] . "</td>
-                    <td>" . $record["achternaam"] . "</td>
-                    <td>" . $record["email"] . "</td>
-                    <td>" . $record["mobiel"] . "</td>
+                    <td>" . $record["TafelNr"] .  "</td>
+                    <td>" . $record["Pers"] . "</td>
+                    <td>" . $record["Achternaam"] . "</td>
+                    <td>" . $record["Tijd"] . "</td>
+                    <td>" . $record["Day"] . "</td>
                     <td>
                     <a href='./update.php?id=" . $record["id"] . "'>
                     <img src='./img/icons/b_edit.png' alt='pensil'>
@@ -55,8 +55,8 @@
                 <th scope="col">Voornaam</th>
                 <th scope="col">Tussenvoegsel</th>
                 <th scope="col">Achternaam</th>
-                <th scope="col"></th>
-                <th scope="col"></th>
+                <th scope="col">Tijd</th>
+                <th scope="col">Dag</th>
                 </tr>
             </thead>
             <tbody>
