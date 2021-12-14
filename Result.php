@@ -1,6 +1,8 @@
 <?php
 //include the connect for the db.
 include("./connect_db.php");
+include("./functions.php");
+is_authorized(["root", "docent"]);
 
 //sellection for the db
 $slt = $conn->query("SELECT `afkorting` FROM `medewerker`");
