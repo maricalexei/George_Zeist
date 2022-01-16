@@ -70,11 +70,35 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
         </div>
        
     <nav class="navbar navbar-expand-lg navbar-light" style=" border-bottom: black">
-        <a class="navbar-brand" style="padding-left: 10px" href="./index.php?content=home">
-            <h1>
-                <b style="font-size: 36px; padding-right: 100px">GEORGE</b>
-            </h1>
-        </a>
+        <?php
+            if(isset($_SESSION["email"])) {
+                switch ($_SESSION["userrole"]) {
+                    case 'docent': echo '<a class="navbar-brand" style="padding-left: 10px" href="./index.php?content=d-home">
+                     <h1><b style="font-size: 36px; padding-right: 0px">GEORGE</b></h1>
+                       </a>';
+                    break;
+
+                    case 'eigenaar': echo '<a class="navbar-brand" style="padding-left: 10px" href="./index.php?content=e-home">
+                     <h1><b style="font-size: 36px; padding-right: 0px">GEORGE</b></h1>
+                       </a>';
+                    break;
+
+                    case 'student': echo '<a class="navbar-brand" style="padding-left: 10px" href="./index.php?content=s-home">
+                     <h1><b style="font-size: 36px; padding-right: 0px">GEORGE</b></h1>
+                       </a>';
+                    break;
+
+                    case 'begeleider': echo '<a class="navbar-brand" style="padding-left: 10px" href="./index.php?content=b-home">
+                     <h1><b style="font-size: 36px; padding-right: 0px">GEORGE</b></h1>
+                       </a>';
+                    break;
+                }
+            } else {
+                echo '<a class="navbar-brand" style="padding-left: 10px" href="./index.php?content=home">
+                     <h1><b style="font-size: 36px; padding-right: 0px">GEORGE</b></h1>
+                       </a>';
+            }
+        ?>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -82,8 +106,8 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
         <div style="padding-left: 36px; padding-right: 16px"></div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item nav_padding" style="">
-                    <a class="nav-link" href="./index.php?content=reservation">RESERVATION</a>
+                <li class="nav-item nav_padding">
+                    <a class="nav-link" href="./index.php?content=reservation" >RESERVATION</a>
                 </li>
                 <li class="nav-item nav_padding">
                     <a class="nav-link" href="./index.php?content=contact">CONTACT</a>
@@ -94,9 +118,24 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
                 <li class="nav-item nav_padding">
                     <a class="nav-link" href="./index.php?content=AboutUs">ABOUT US</a>
                 </li>
-                <li class="nav-item" style="padding-left: 36px">
+                <li class="nav-item nav_padding">
                     <a class="nav-link" href="./index.php?content=menu">MENU</a>
                 </li>
+                <li class="nav-item nav_padding">
+                    <a class="nav-link" href="./index.php?content=career">CAREER</a>
+                </li>
+                <?php
+                if (isset($_SESSION["email"])){
+                    echo '<li class="nav-item nav_padding">
+                    <a class="nav-link" href="./index.php?content=logout">LOGOUT</a>
+                </li>';
+                } else {
+                    echo '<li class="nav-item nav_padding">
+                    <a class="nav-link" href="index.php?content=login">LOGIN</a>
+                </li>';
+                }
+                ?>
+
             </ul>
         </div>
     </nav>

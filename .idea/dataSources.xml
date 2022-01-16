@@ -15,5 +15,12 @@
       <jdbc-url>jdbc:sqlite:C:\Projects\Project_Semester_2\George_Zeist\img\ERD_AH_Casus.vpp</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="projectgeorgezeist" uuid="c319c050-1955-4769-acc9-5164c6c54056">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Projects\Project_Semester_2\George_Zeist\wireframes\projectgeorgezeist.bmpr</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

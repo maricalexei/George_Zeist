@@ -79,8 +79,6 @@
 
   }
 
-<<<<<<< Updated upstream
-=======
 function build_calender($month,$year){
     $daysOfWeek = array('Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
 
@@ -144,33 +142,5 @@ function build_calender($month,$year){
     $calendar .= "</table>";
 
     return $calendar;
- 
-// function logged_in_redirect($userroles)
-//  {
-//   global $conn;
-
-//   $sql = "SELECT * FROM `rol`";
-
-//   $result = mysqli_query($conn, $sql);
-
-//   if (mysqli_num_rows($result)) {
-//     $db_userrole = mysqli_fetch_assoc($result);
-//     if (in_array($db_userrole["rol"], $userroles)) {
-//       header("Location: ./index.php?content=home.php");
-//     } else {
-//       header("Location: ./index.php?content=register.php");
-//     }
-
-//   } else {
-//     return false;
-//   }
-
-  
-// }
-
 }
-
-  
-
->>>>>>> Stashed changes
 ?>
