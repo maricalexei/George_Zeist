@@ -5,7 +5,6 @@ include("./functions.php");
 
 $student=$_SESSION['email'];
 //sellection for the db
-$sql=$conn->query("SELECT * FROM `student` WHERE `email` = $student");
 
 
 
