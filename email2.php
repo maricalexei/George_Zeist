@@ -18,7 +18,7 @@
       <h2>Beste Gebruiker,</h2>
       <p>You recently booked a reservation at: http://projectgeorgezeist</p>
       <p>Thank you for choosing us!</p>
-      <p>Please fill in the form <a href="http://projectgeorgezeist/index.php?content=reservationform"</p>
+      <p>Please fill in the form http://projectgeorgezeist/index.php?content=reservationform</p>
     </body>
   </html>';
 
