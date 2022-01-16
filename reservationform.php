@@ -28,5 +28,6 @@
                 <label for="star1" title="text">1 star</label>
             </div>
         </div>
+        <a href="index.php?content=reservation"><button type="button" class="btn btn-primary">Save </button></a>
     </div>
 </div>
