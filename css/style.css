@@ -253,6 +253,11 @@
 	}
 }
 
+.calendar_button{
+	padding-bottom: 15px;
+	text-align: center;
+}
+
 .row{
 	margin-top: 20px;
 }

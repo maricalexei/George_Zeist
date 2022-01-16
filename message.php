@@ -144,9 +144,23 @@
             </div>';
       header("Refresh: 3; ./index.php?content=reservation");
     break;
-    default:
-      header("Location: ./index.php?content=home");
+      case "calendar-error" :
+          echo '<div class="alert alert-danger mt-5 w-50 mx-auto text-center" role="alert">
+            Something went wrong! Try again!
+            </div>';
+       header("Refresh: 3; ./index.php?content=calendar");
     break;
+      case "calendar-succes":
+          echo '<div class="alert alert-success mt-5 w-50 mx-auto text-center" role="alert">
+            Your event was succesfully added!
+            </div>';
+          header("Refresh: 3; ./index.php?content=calendar");
+    break;
+
+//    default:
+//      header("Location: ./index.php?content=home");
+//          break;
+
   }
 
 
