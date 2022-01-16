@@ -11,6 +11,19 @@ if(isset($_POST['submit'])){
     $qry = "INSERT INTO `reserveringen` (`id`, `TafelNr`, `Pers`, `Achternaam`, `Tijd`, `Day`) VALUES (NULL, '$tablenumber', '$pers', '$achternaam', '$time', '$day')";
 if(mysqli_query($conn, $qry)){
     header("Location: ./index.php?content=message&alert=book-success");
+    $to = $email;
+    $subject = "Reservationemail from georgemboutrecht.nl";
+    // echo $activationpage; exit();
+    include("./email2.php");
+    // include("./alt-email2.php");
+    
+    $headers = "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=UTF-8\r\n";
+    $headers .= "From: admin@georgemboutrecht.nl\r\n";
+    $headers .= "Cc: moderator@georgemboutrecht.nl\r\n";
+    $headers .= "Bcc: root@georgemboutrecht.nl";
+    
+    mail($to, $subject, $message, $headers);
 }else{
         header("Location: ./index.php?content=message&alert=book-failed");
     }
