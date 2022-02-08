@@ -5,7 +5,7 @@
         echo 'Connection Error: ' . mysqli_connect_error();
     }
 
-    $sql = 'SELECT * voornaam, tussenvoegsel, achternaam, email FROM `medewerker';
+    $sql = 'SELECT * `voornaam`, `tussenvoegsel`, `achternaam`, `email` FROM `medewerker';
     $result = mysqli_query($conn, $sql);
     $docent = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
